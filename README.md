@@ -62,14 +62,7 @@ https://hp-api.onrender.com/
   - app.routes.ts
 
 ---
-
-## How to Run the Project
-
-1. Clone the repository:
-```bash
-git clone https://github.com/Ripon-2002/101517912_LabTest2_comp3133.git
-
-
+Images
 ##Home Page
 <img width="1884" height="871" alt="image" src="https://github.com/user-attachments/assets/803756fe-dd54-4a5e-b1e2-08655f787614" />
 
@@ -80,6 +73,15 @@ git clone https://github.com/Ripon-2002/101517912_LabTest2_comp3133.git
 ##Details PAge
 
 <img width="1749" height="819" alt="image" src="https://github.com/user-attachments/assets/d1ac24da-d852-4991-8dfb-c9c3521be5cc" />
+
+## How to Run the Project
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Ripon-2002/101517912_LabTest2_comp3133.git
+
+
+
 
 
 
