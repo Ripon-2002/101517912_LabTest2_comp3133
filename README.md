@@ -68,3 +68,19 @@ https://hp-api.onrender.com/
 1. Clone the repository:
 ```bash
 git clone https://github.com/Ripon-2002/101517912_LabTest2_comp3133.git
+
+
+##Home Page
+<img width="1884" height="871" alt="image" src="https://github.com/user-attachments/assets/803756fe-dd54-4a5e-b1e2-08655f787614" />
+
+##Filter BY House
+<img width="1876" height="862" alt="image" src="https://github.com/user-attachments/assets/e5d96329-3e64-41d4-8d0e-66221f87b865" />
+
+
+##Details PAge
+
+<img width="1749" height="819" alt="image" src="https://github.com/user-attachments/assets/d1ac24da-d852-4991-8dfb-c9c3521be5cc" />
+
+
+
+
