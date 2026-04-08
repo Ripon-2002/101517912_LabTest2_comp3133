@@ -1,0 +1,51 @@
+<mat-toolbar color="primary" class="toolbar">
+  <span class="toolbar-title">Harry Potter Characters</span>
+</mat-toolbar>
+
+<div class="page-container">
+  <app-characterfilter (houseSelected)="onHouseSelected($event)"></app-characterfilter>
+
+  @if (loading()) {
+    <div class="center">
+      <mat-spinner></mat-spinner>
+    </div>
+  } @else if (errorMessage()) {
+    <p class="error">{{ errorMessage() }}</p>
+  } @else if (characters().length === 0) {
+    <p class="no-data">No characters found.</p>
+  } @else {
+    <div class="card-grid">
+      @for (character of characters(); track $index) {
+        <mat-card class="character-card" (click)="goToDetails(character.id)">
+          <img
+            mat-card-image
+            [src]="character.image"
+            [alt]="character.name"
+          />
+
+          <mat-card-content>
+            <h3>{{ character.name }}</h3>
+
+            @switch (character.house) {
+              @case ('Gryffindor') {
+                <p class="house gryffindor">{{ character.house }}</p>
+              }
+              @case ('Slytherin') {
+                <p class="house slytherin">{{ character.house }}</p>
+              }
+              @case ('Hufflepuff') {
+                <p class="house hufflepuff">{{ character.house }}</p>
+              }
+              @case ('Ravenclaw') {
+                <p class="house ravenclaw">{{ character.house }}</p>
+              }
+              @default {
+                <p class="house no-house">No House</p>
+              }
+            }
+          </mat-card-content>
+        </mat-card>
+      }
+    </div>
+  }
+</div>
